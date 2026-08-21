@@ -37,7 +37,7 @@ export default function Home() {
             Kamla Oil Industries
           </p>
           <h1 className="animate-fade-in-up animation-delay-100 mt-4 font-display text-5xl font-extrabold tracking-tight text-white sm:text-6xl lg:text-7xl">
-            Providing Clean Energy For India
+            Providing  Energy For India
           </h1>
           <p className="animate-fade-in-up animation-delay-200 mt-5 max-w-2xl text-lg text-green-50/90 sm:text-xl">
             Transforming plastic waste into valuable industrial fuel — powering
