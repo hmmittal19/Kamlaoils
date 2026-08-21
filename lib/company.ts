@@ -13,4 +13,6 @@ export const company = {
   city: "Hapur, Uttar Pradesh",
   mapsUrl:
     "https://www.google.com/maps/search/?api=1&query=F-584%2C+UPSIDC+INDUSTRIAL+AREA%2C+MG+ROAD%2C+HAPUR%2C+UTTAR+PRADESH+201015",
+  mapsEmbedUrl:
+    "https://maps.google.com/maps?q=F-584,+UPSIDC+INDUSTRIAL+AREA,+MG+ROAD,+HAPUR,+UTTAR+PRADESH+201015&hl=en&z=16&output=embed",
 } as const;

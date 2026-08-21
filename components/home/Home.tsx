@@ -57,7 +57,7 @@ export default function Home() {
         eyebrow="First of all"
         title="Our Mission"
         imageSrc={siteImages.mission}
-        imageAlt="Green mountains and natural landscape"
+        imageAlt="Plastic waste to fuel — converting waste into clean energy and hydrogen"
         className="bg-white"
       >
         <p>
