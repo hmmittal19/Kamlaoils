@@ -1,6 +1,9 @@
+"use client";
+
 import ContactDetails from "@/components/ContactDetails";
 import { company } from "@/lib/company";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const footerLinks = [
   { href: "/", label: "Home" },
@@ -10,11 +13,14 @@ const footerLinks = [
 ];
 
 export default function Footer() {
+  const pathname = usePathname();
+  const isContactPage = pathname === "/contact";
+
   return (
-    <footer className="mt-auto border-t border-green-200 bg-green-100/60">
+    <footer className="mt-auto border-t border-green-200 bg-green-100/70">
       <div className="mx-auto grid max-w-6xl gap-10 px-4 py-10 sm:px-6 lg:grid-cols-3 lg:px-8">
         <div>
-          <p className="font-display font-semibold tracking-tight text-green-700">
+          <p className="font-display text-lg font-semibold tracking-tight text-green-800">
             {company.shortName}
           </p>
           <p className="mt-1 text-base text-green-800/70">
@@ -34,10 +40,10 @@ export default function Footer() {
           </ul>
         </div>
         <div className="lg:col-span-2">
-          <ContactDetails layout="grid" />
+          <ContactDetails layout="grid" hideLocation={isContactPage} />
         </div>
       </div>
-      <div className="border-t border-green-200 bg-green-50 px-4 py-4 text-center text-base text-green-700/80">
+      <div className="border-t border-green-200 bg-green-50 px-4 py-4 text-center text-base text-green-800/70">
         © {new Date().getFullYear()} {company.legalName}. All rights reserved.
       </div>
     </footer>

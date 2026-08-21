@@ -7,7 +7,7 @@ export default function PageHeader({ title, description }: PageHeaderProps) {
   return (
     <section className="relative overflow-hidden border-b border-green-200 bg-gradient-to-br from-green-100 via-emerald-50 to-lime-50 px-4 py-14 sm:px-6 lg:px-8">
       <div
-        className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-green-300/30 animate-float"
+        className="pointer-events-none absolute -right-16 -top-16 h-64 w-64 rounded-full bg-green-300/25 animate-float"
         aria-hidden
       />
       <div
@@ -15,10 +15,10 @@ export default function PageHeader({ title, description }: PageHeaderProps) {
         aria-hidden
       />
       <div className="relative mx-auto max-w-6xl">
-        <h1 className="animate-fade-in-up font-display text-4xl font-bold tracking-tight text-green-800 sm:text-5xl md:text-6xl">
+        <h1 className="animate-fade-in-up font-display text-4xl font-extrabold tracking-tight text-gradient-hero sm:text-5xl md:text-6xl">
           {title}
         </h1>
-        <p className="animate-fade-in-up animation-delay-200 text-lead mt-4 max-w-2xl text-green-700/80 opacity-0-initial">
+        <p className="animate-fade-in-up animation-delay-200 text-lead mt-4 max-w-2xl text-green-800/75 opacity-0-initial">
           {description}
         </p>
       </div>

@@ -38,7 +38,7 @@ export default function AboutUs() {
               <h2 className="text-2xl font-bold text-green-800">
                 Welcome to Kamla Oil Industries
               </h2>
-              <p className="mt-4 leading-relaxed text-zinc-600">
+              <p className="mt-4 leading-relaxed text-green-800/75">
                 Kamla Oil Industries Private Limited is an active unlisted
                 private company located at our UPSIDC Industrial Area plant in
                 Hapur, Uttar Pradesh, specializing as
@@ -47,12 +47,12 @@ export default function AboutUs() {
                 including oils obtained from bituminous minerals and petroleum
                 residues.
               </p>
-              <p className="mt-4 leading-relaxed text-zinc-600">
+              <p className="mt-4 leading-relaxed text-green-800/75">
                 Our facility transforms plastic waste into valuable resources —
                 industrial fuels and chemical byproducts — supporting India&apos;s
                 transition toward cleaner energy and a circular economy.
               </p>
-              <p className="mt-4 leading-relaxed text-zinc-600">
+              <p className="mt-4 leading-relaxed text-green-800/75">
                 Kamla Oil is <strong>Better · Bigger · Faster</strong> —
                 providing clean energy for India through proven plastic-to-energy
                 technology and continuous, high-performance operations.
@@ -61,58 +61,58 @@ export default function AboutUs() {
             </AnimateIn>
             <AnimateIn delay={150}>
             <div className="rounded-xl bg-green-50 p-8 transition-all duration-300 hover:shadow-md">
-              <h3 className="font-semibold text-green-700">
+              <h3 className="font-semibold text-green-800">
                 Company at a glance
               </h3>
               <dl className="mt-6 space-y-4">
                 <div>
-                  <dt className="text-sm text-zinc-500">Legal name</dt>
+                  <dt className="text-sm text-green-700/70">Legal name</dt>
                   <dd className="font-medium text-green-800">
                     Kamla Oil Industries Private Limited
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-sm text-zinc-500">Incorporated</dt>
+                  <dt className="text-sm text-green-700/70">Incorporated</dt>
                   <dd className="font-medium text-green-800">
                     {company.incorporated}
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-sm text-zinc-500">Plant location</dt>
+                  <dt className="text-sm text-green-700/70">Plant location</dt>
                   <dd className="font-medium text-green-800">
                     {company.plantLocation}
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-sm text-zinc-500">Phone</dt>
+                  <dt className="text-sm text-green-700/70">Phone</dt>
                   <dd className="font-medium text-green-800">
                     <a
                       href={`tel:${company.phoneTel}`}
-                      className="hover:text-green-700"
+                      className="hover:text-green-800"
                     >
                       {company.phone}
                     </a>
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-sm text-zinc-500">Email</dt>
+                  <dt className="text-sm text-green-700/70">Email</dt>
                   <dd className="font-medium text-green-800">
                     <a
                       href={`mailto:${company.email}`}
-                      className="hover:text-green-700"
+                      className="hover:text-green-800"
                     >
                       {company.email}
                     </a>
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-sm text-zinc-500">Specialization</dt>
+                  <dt className="text-sm text-green-700/70">Specialization</dt>
                   <dd className="font-medium text-green-800">
                     Biomass oil refinery · Plastic-to-energy
                   </dd>
                 </div>
                 <div>
-                  <dt className="text-sm text-zinc-500">Status</dt>
+                  <dt className="text-sm text-green-700/70">Status</dt>
                   <dd className="font-medium text-green-800">
                     Active · Unlisted private company
                   </dd>
@@ -126,7 +126,7 @@ export default function AboutUs() {
           <h2 className="mt-16 text-2xl font-bold text-green-800">
             What we do
           </h2>
-          <p className="mt-4 max-w-3xl leading-relaxed text-zinc-600">
+          <p className="mt-4 max-w-3xl leading-relaxed text-green-800/75">
             We operate as a biomass oil refinery specializing in the manufacturing
             and supply of industrial fuels and chemical byproducts. Through
             sorting, shredding, extrusion, pyrolysis, thermolysis, and
@@ -143,10 +143,10 @@ export default function AboutUs() {
             {values.map(({ title, description }, index) => (
               <AnimateIn key={title} delay={index * 100}>
               <article className="rounded-xl border border-green-200 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-md">
-                <h3 className="font-semibold text-green-700">
+                <h3 className="font-semibold text-green-800">
                   {title}
                 </h3>
-                <p className="mt-2 text-sm text-zinc-600">
+                <p className="mt-2 text-sm text-green-800/75">
                   {description}
                 </p>
               </article>
@@ -164,13 +164,13 @@ export default function AboutUs() {
           <AnimateIn delay={100} className="mt-12 flex flex-wrap gap-4">
             <Link
               href="/products"
-              className="inline-flex rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-green-600"
+              className="inline-flex rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-green-700"
             >
               Explore MORE →
             </Link>
             <Link
               href="/contact"
-              className="inline-flex rounded-full border border-green-500 px-6 py-3 text-sm font-semibold text-green-700 transition-all duration-300 hover:scale-105 hover:bg-green-50"
+              className="inline-flex rounded-full border border-green-600 px-6 py-3 text-sm font-semibold text-green-800 transition-all duration-300 hover:scale-105 hover:bg-green-50"
             >
               Contact us
             </Link>

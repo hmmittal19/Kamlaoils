@@ -53,7 +53,7 @@ export default function Products() {
       <section className="px-4 py-16 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-6xl">
           <AnimateIn>
-            <p className="max-w-3xl text-zinc-600">
+            <p className="max-w-3xl text-green-800/75">
               Kamla Oil Industries transforms plastic waste into oil and related
               products through advanced chemical recycling. Our multi-layer
               processing handles complex plastics, while closed-loop operations
@@ -63,14 +63,14 @@ export default function Products() {
           <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {products.map(({ name, category, description }, index) => (
               <AnimateIn key={name} delay={index * 80}>
-                <article className="flex h-full flex-col rounded-xl border border-green-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-green-400 hover:shadow-md">
+                <article className="flex h-full flex-col rounded-xl border border-green-200 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-green-500 hover:shadow-md">
                 <span className="text-xs font-medium uppercase tracking-wide text-green-600">
                   {category}
                 </span>
-                <h3 className="mt-2 font-semibold text-green-800">
+                <h3 className="mt-2 font-semibold text-green-900">
                   {name}
                 </h3>
-                <p className="mt-2 flex-1 text-sm text-zinc-600">
+                <p className="mt-2 flex-1 text-sm text-green-800/75">
                   {description}
                 </p>
                 </article>
@@ -78,19 +78,19 @@ export default function Products() {
             ))}
           </div>
           <AnimateIn delay={200}>
-          <p className="mt-10 text-sm text-zinc-500">
+          <p className="mt-10 text-sm text-green-700/70">
             Contact us for specifications, bulk supply, and partnership inquiries
             at {company.plantLocation}. Call{" "}
             <a
               href={`tel:${company.phoneTel}`}
-              className="text-green-700 hover:underline"
+              className="text-green-900 hover:underline"
             >
               {company.phone}
             </a>{" "}
             or email{" "}
             <a
               href={`mailto:${company.email}`}
-              className="text-green-700 hover:underline"
+              className="text-green-900 hover:underline"
             >
               {company.email}
             </a>
@@ -98,7 +98,7 @@ export default function Products() {
           </p>
           <Link
             href="/contact"
-            className="mt-4 inline-flex rounded-full bg-green-500 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-green-600"
+            className="mt-4 inline-flex rounded-full bg-green-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:scale-105 hover:bg-green-700"
           >
             Get in touch
           </Link>
